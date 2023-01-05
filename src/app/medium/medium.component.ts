@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { faComment, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { Medium } from '../shared/interfaces/medium.interface';
+import { MediumService } from './medium.service';
+//import { MediumService } from '../medium.service';
 
 @Component({
   selector: 'app-medium',
@@ -15,7 +18,10 @@ export class MediumComponent implements OnInit {
 
   constructor() { }
 
+  blogsData!:Medium[];
+
   ngOnInit(): void {
+   
   }
 
 }

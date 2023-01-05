@@ -7,7 +7,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MediumheaderComponent } from './mediumheader/mediumheader.component';
 import { MediumContentComponent } from './medium-content/medium-content.component';
-
+import {HttpClientModule} from '@angular/common/http';
+import { ViewBlogComponent } from './view-blog/view-blog.component';
 
 
 @NgModule({
@@ -15,12 +16,14 @@ import { MediumContentComponent } from './medium-content/medium-content.componen
     MediumComponent,
     MediumheaderComponent,
     MediumContentComponent,
+    ViewBlogComponent,
   ],
   imports: [
     CommonModule,
     RouterModule,
     FontAwesomeModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
 })
 export class MediumModule { }
